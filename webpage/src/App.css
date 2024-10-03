@@ -1,0 +1,177 @@
+/* AppLandingPage.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.app-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-square {
+  background-color: #7dd3fc;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-link {
+  color: #4a5568;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.main-content {
+  padding: 2rem 0;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 2rem;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #2c5282;
+  margin-bottom: 1rem;
+}
+
+.description {
+  border-left: 2px solid #48bb78;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cta-text {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #4299e1;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-icon {
+  width: 100%;
+  max-width: 300px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.mobile-icon svg {
+  width: 100%;
+  height: auto;
+  color: #a0aec0;
+}
+
+.bottom-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bottom-heading {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 200px;
+  height: 2px;
+  background-color: #4299e1;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    margin-top: 1rem;
+    width: 100%;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0;
+  }
+
+  .main-heading {
+    font-size: 1.75rem;
+  }
+}
